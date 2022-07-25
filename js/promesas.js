@@ -31,6 +31,9 @@ desarrollo
     // then Se ejecuta cuando hay un resultado satisfactorio
     .then((proyecto)=>{printHTML(proyecto)})
     // catch reacciona con reject
-    .catch((error) => { console.log(error)})
+    .catch((error) => { printHTML(error)})
     // Siempre se ejecuta al finalizar 
-    .finally(()=>{console.log("La promesa ha terminado")})
+    .finally(()=>{printHTML("La promesa ha terminado")});
+
+
+export{printHTML};
